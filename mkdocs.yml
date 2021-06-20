@@ -1,0 +1,8 @@
+site_name: HIAS Bluetooth IoT Agent
+site_url: https://hias-bluetooth-iot-agent.readthedocs.io/
+repo_url: https://github.com/AIIAL/HIAS-Bluetooth-IoT-Agent
+pages:
+  - Home: index.md
+  - 'Getting Started': 'getting-started.md'
+  - 'Installation':
+    - 'Ubuntu Installation Guide': 'installation/ubuntu.md'
