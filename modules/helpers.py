@@ -35,7 +35,7 @@ import time
 from datetime import datetime
 
 
-class helpers():
+class Helpers():
 	""" Helper Class
 
 	AI Agent helper functions.
