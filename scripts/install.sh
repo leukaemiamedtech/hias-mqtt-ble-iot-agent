@@ -1,20 +1,21 @@
 #!/bin/bash
 
-PRN="HIAS Bluetooth IoT Agent"
-FMSG="- $PRN installation terminated"
+FMSG="- HIAS MQTT BLE Agent installation terminated"
 
-read -p "? This script will install the $PRN on your device. Are you ready (y/n)? " cmsg
+echo "This script will install the HIAS MQTT BLE Agent on your device."
+read -p "Proceed (y/n)? " proceed
 
-if [ "$cmsg" = "Y" -o "$cmsg" = "y" ]; then
-	echo "- Installing $PRN"
-	pip3 install --user flask
-	pip3 install --user gevent
-	pip3 install --user psutil
-	pip3 install --user requests
-	pip3 install --user web3
-	pip3 install --user gevent
-	echo "- $PRN installed!"
+if [ "$proceed" = "Y" -o "$proceed" = "y" ]; then
+    echo "- Installing HIAS MQTT BLE Agent"
+    pip3 install --user bcrypt
+    pip3 install --user flask
+    pip3 install --user paho-mqtt
+    pip3 install --user psutil
+    pip3 install --user requests
+    pip3 install --user web3
+    pip3 install --user bluepy
+    echo "- HIAS MQTT BLE Agent installed!"
 else
-	echo $FMSG;
-	exit
+    echo $FMSG;
+    exit
 fi
